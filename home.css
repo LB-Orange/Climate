@@ -18,6 +18,7 @@
   padding: 5px;
 }
 
+<<<<<<< HEAD
 .food::after {
   content: "";
   clear: both;
@@ -31,6 +32,8 @@
   padding: 5px;
 }
 
+=======
+>>>>>>> Home page html, css, js
 .image {
   opacity: 1;
   display: block;
@@ -63,6 +66,10 @@
   background-color: #4CAF50;
   color: white;
   font-size: 16px;
+<<<<<<< HEAD
+=======
+  padding: 16px 32px;
+>>>>>>> Home page html, css, js
 }
 
 
@@ -108,6 +115,7 @@
   from {opacity: .4}
   to {opacity: 1}
 }
+<<<<<<< HEAD
 
 .menu {
   width: 30px;
@@ -151,3 +159,5 @@
 .dropdown-content a:hover {background-color: #f1f1f1;}
 .dropdown:hover .dropdown-content {display: block;}
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
+=======
+>>>>>>> Home page html, css, js
