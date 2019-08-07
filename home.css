@@ -18,6 +18,7 @@
   padding: 5px;
 }
 
+
 .food::after {
   content: "";
   clear: both;
@@ -30,6 +31,7 @@
   width: 33.33%;
   padding: 5px;
 }
+
 
 .image {
   opacity: 1;
@@ -63,6 +65,9 @@
   background-color: #4CAF50;
   color: white;
   font-size: 16px;
+
+  /*padding: 16px 32px;*/
+
 }
 
 
