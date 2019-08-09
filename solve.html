@@ -1,22 +1,130 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <!-- <ul>
-    <li><a href="file:///Users/hongwang/Documents/home.html">Home</a></li>
-    <li><a href="file:///Users/hongwang/Documents/problem.html">Problems</a></li>
-    <li><a href="file:///Users/hongwang/Documents/progress.html">Current Progress</a></li>
-    <li><a href="file:///Users/hongwang/Documents/solve.html">Learn to Solve</a></li>
-  </ul> -->
-
-
-
+<html>
   <head>
-    <meta charset="utf-8">
-    <title>Problems Today</title>
-    <link rel="stylesheet" href="climate.css">
+
+    <link rel = "stylesheet" href = "home.css">
     <link rel="stylesheet" href="solve.css">
+    <title>graviterras</title>
+    <style>
+    body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 59.25px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+.signupbtn {
+  padding: 14px 20px;
+  background-color: #4CAF50;
+}
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container1 {
+
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+</style>
   </head>
 
-  <body>
+
+    <body id = "computer">
     <div class="dropdown">
       <button class="dropbtn">
         <div class="menu"></div>
@@ -24,53 +132,142 @@
         <div class="menu"></div>
       </button>
       <div class="dropdown-content">
-        <a href="home.html">Home</a>
         <a href="problem.html">Problems</a>
         <a href="progress.html">Current Progress</a>
         <a href="solve.html">Learn to Solve</a>
+
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
       </div>
     </div>
     <p>
         <a href="home.html">
-        <img border="0" alt="climate" src="https://lh3.googleusercontent.com/-LU0Xpj6Cr-I/XUnJ2m7Y_9I/AAAAAAAAEKA/BMa9FSQS-GkGeR4p4avqK5uKZgfuvtDHACK8BGAs/s0/graviterras%2Blogo%2B2.png" height="130px" width="240px">
+        <img border="0" alt="climate" src="image.png" height="120px" width="300px">
         </a>
+    </p>
+    <div class="parallax"></div>
+    <div class="centered2">
+      SOLUTIONS
+
+    </div>
+        <div style="height:250px;background-color:white;font-size:30px;color:black;font-family:fantasy">
+            <center class = "wild2">Only one country has completely found a solution to a cleaner environment and that is Iceland. They are using more renewable energy than ever and have the cleanest air. If we follow the step of Iceland, we can potentially reduce the chances of global warming increasing.</center>
+      </div>
 
 
-        <div class="centered">
-            <img src="download.jpg">
-            <div class="centered">
-              <strong>SURVEY</strong>
-            </div>
+
+<div class="parallax2">
+
+    <div id="org_container" class="container">
+      <div class="head1">
+      <div class="centered">
+        <center><strong><h1>ORGANIZATIONS TO SUPPORT</h1></strong></center>
+      </div>
+      </div>
+      <div class="middle">
+        <div  id="org"class="text1">
+          <a href="https://4ocean.com/" class="line"><strong>4ocean</strong></a><br>They clean the ocean by removing plastic. By buying their products you can help fund their cleaning operations. In addition their bracelets are made from recycled materials.
+          <br>
+          <br>
+          <a href="https://www.nationalgeographic.org/" class="line"><strong>National Geographic</strong></a> <br> Not only do they provide insight into the environment and how we impact it, but they are working with organizations to save species from being extinct. Donating can help them with their current mission of saving the Sumatran Rhinos.
+          <br>
+          <br>
+          <a href="https://greenpeacefund.org/" class="line"><strong>Greenpeace Fund</strong></a>
+          <br>
+          <br>
+          <a href="https://www.worldwildlife.org/" class="line"><strong>WorldWildlife Fund</strong></a>
+        </div>
+        </div>
         </div>
 
-        <div class="bottom-left">
-          <img src="download.jpg">
-          <div class="bottom">
-            <strong>ORGANIZATIONS TO SUPPORT</strong>
+
+    <div class = "row5">
+    <div id="quiz_container">
+    <div class="container3">
+        <center class = "thiccc"><center><strong><h1>QUIZ</h1></strong></center></center>
+        <div class="sexy">
+        <div class="fish"><center><u><a href="https://quiz.tryinteract.com/#/5d4af41bf1360f0014d6267d?method" class="line">Click here to take a quiz to see how enviromentally friendly you are. Scroll to hte bottom of the page to see the key to your score. <br>
+      </div>
+      </div>
+      </div>
+    </div>
+    </div>
+
+    <div class = "row5">
+    <div id="donate_container">
+      <div class="container3">
+        <div>
+          <div class="line2">
+            <center class = "thiccc2"><a href="donations.html"><center><strong><h1>DONATE</h1></strong></center></a>
           </div>
-        </div>
-
-        <div class="bottom-right">
-          <img src="download.jpg">
-          <div class="bottom-right">
-        <div class="">
-          <img src="download.jpg">
-          <div class="">
-            <strong>DONATE</strong>
-          </div>
 
         </div>
 
+      </center>
+        <div class="sexy">
+          <div class="fish"><center><u><a href="donations.html" class="line">Click here to discover great organizations who accept donations.</a>
+       </u></center><br>
+      </div>
+      </div>
+    </div>
+    </div>
+    </div>
+
+</div>
+</div>
+
+<div>
+    <center class ="wild2"><div style="height:446px;background-color:white;font-size:24px;color:black;font-family:fantasy"> <strong>Key:</strong><br><br>
+<div>0-3: You are doing a great job. Keep up the good work!</div>
+	<div>Just remember to keep thinking green and to keep the Earth clean.</div>
+<br><div>4-7: You can do better. Look at the options below to improve the environment:</div>
+	<div>Maybe start using reusable items that you use in your everyday life like a cup or straw.</div>
+<br><div>8-12: Oh no1 You are contributing to pollution! Change your life style now! Consider the options below to improve the environment:</div>
+	<div>Start little by little. First try not to litter. Be aware of how much electricity you use and just limit yourself slowly with things that you know are harmful to the environment.</div>
+</center></div>
+</div>
+
+<div id="id01" class="modal" style="color:black">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container1">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
 
 
-
-        <div class="speech">
-            <legend> SURVEY </legend>
-        </div>
-        <fieldset>
-          <legend>ORGANIZATIONS TO SUPPORT</legend>
-        </fieldset>
-        <fieldset>
-          <legend>DONATE</legend>
-        </fieldset>
   </body>
+</html>
