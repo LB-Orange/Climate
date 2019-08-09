@@ -1,0 +1,137 @@
+.menu {
+  width: 35px;
+  height: 6px;
+  background-color: black;
+  margin: 6px 0;
+}
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 22px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  float: right;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+h1{
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  outline-style: solid;
+  outline-color: skyblue;
+  outline-width: 5px;
+  background: white;
+}
+
+img {
+  float: left;
+  position: relative;
+  margin: 0px 20px;
+}
+
+p {
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+}
+
+#more {display: none;}
+
+#more1 {display: none;}
+
+#more2 {display: none;}
+
+h2{
+  margin: 0px 20px;
+  padding-top: 30px;
+  font-family:fantasy;
+}
+
+body{
+  background-color: darkseagreen;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("https://planetgreenrecycle.com/fundraising/wp-content/uploads/2015/09/pollution.jpeg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+}
+
+.problem{
+  style="height:150px;
+  background-color:white;
+  font-size:36px;
+  color: #777;
+  text-align:center;
+  position: relative;
+  text-align: justify;
+}
+
+#info{
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 50px;
+  padding-bottom: 0px;
+  font-size: 25px;
+  font-family: fantasy;
+}
+
+.header{
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 70px;
+  color: black;
+  font-family: fantasy;
+  font-weight: bold;
+}
+
+body{
+  background-image: url("https://hookagency.com/wp-content/uploads/2015/11/miracle-grow-light-green-gradient.jpg");
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.readMore{
+  float: right;
+}
