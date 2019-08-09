@@ -135,20 +135,3 @@ body{
 .readMore{
   float: right;
 }
-
-img {
-  float: left;
-}
-
-p {
-  padding-right: 10;
-  padding-top: 10;
-  padding-left: 10;
-  padding-bottom: 10;
-}
-
-#more {display: none;}
-
-#more1 {display: none;}
-
-#more2 {display: none;}
