@@ -18,7 +18,9 @@
   padding: 5px;
 }
 
-
+#computer{
+  background-color: black;
+}
 .food::after {
   content: "";
   clear: both;
@@ -31,7 +33,6 @@
   width: 33.33%;
   padding: 5px;
 }
-
 
 .image {
   opacity: 1;
@@ -61,12 +62,17 @@
   opacity: 1;
 }
 
-.text {
-  background-color: #4CAF50;
-  color: white;
-  font-size: 16px;
+.container:hover .thicc{
+  opacity: 0;
+}
 
-  /*padding: 16px 32px;*/
+.container:hover .bean{
+  opacity: 0;
+}
+.text {
+  color: white;
+  font-size: 24px;
+  font-family: fantasy;
 
 }
 
@@ -76,6 +82,8 @@
   position: center;
 
 }
+
+
 
 /* Caption text */
 
@@ -114,9 +122,12 @@
   to {opacity: 1}
 }
 
+.cool {
+  background-color: black;
+}
 .menu {
-  width: 30px;
-  height: 4px;
+  width: 35px;
+  height: 8px;
   background-color: black;
   margin: 6px 0;
 }
@@ -124,7 +135,7 @@
 .dropbtn {
   background-color: #4CAF50;
   color: white;
-  padding: 16px;
+  padding: 25px;
   font-size: 16px;
   border: none;
   cursor: pointer;
@@ -156,3 +167,94 @@
 .dropdown-content a:hover {background-color: #f1f1f1;}
 .dropdown:hover .dropdown-content {display: block;}
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+.thicc{
+  color: white;
+  font-family: fantasy;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 80px;
+  font-family: fantasy;
+}
+
+.bean{
+  color: white;
+  font-family: fantasy;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 40px;
+  font-family: fantasy;
+
+}
+.wild{
+  color: black;
+  font-family:fantasy;
+  width: 100%;
+  padding-bottom: 15px;
+  font-stretch: extra-expanded;
+  font-size: 25px;
+  font-style: italic;
+}
+
+.wild2{
+  color: black;
+  font-family:fantasy;
+  width: 100%;
+  padding: 38px;
+  font-stretch: extra-expanded;
+  font-size: 25px;
+  font-style: italic;
+}
+.guac{
+  color: blacks;
+  font-family: fantasy;
+  width: 100%;
+  padding: 28px;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("sunrise.jpg");
+  opacity: 0.6;
+
+
+  /* Set a specific height */
+  min-height: 750px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.center {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 80px;
+  font-family: fantasy;
+}
+
+.center2{
+  position: absolute;
+  top: 75%;
+  left: 68%;
+  transform: translate(-50%, -50%);
+}
+.parallax2 {
+  margin-top: 15px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

@@ -1,42 +1,129 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-
-  <h1><center></center></h1>
-  <link rel = "stylesheet" href = "home.css">
-
-
-</head>
-
   <head>
+    <h1><center></center></h1>
     <link rel = "stylesheet" href = "home.css">
     <title>graviterras</title>
+    <style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
 
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 59.25px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+.signupbtn {
+  padding: 14px 20px;
+  background-color: #4CAF50;
+}
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container1 {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+</style>
   </head>
 
-  <body>
-    <div class="dropdown">
-      <button class="dropbtn">
-        <div class="menu"></div>
-        <div class="menu"></div>
-        <div class="menu"></div>
-      </button>
-      <div class="dropdown-content">
+  <body id = "computer">
 
-        <a href="home.html">Home</a>
-
-
-        <a href="problem.html">Problems</a>
-        <a href="progress.html">Current Progress</a>
-        <a href="solve.html">Learn to Solve</a>
-      </div>
-    </div>
-    <p>
-        <a href="home.html">
-        <img border="0" alt="climate" src="https://lh3.googleusercontent.com/-LU0Xpj6Cr-I/XUnJ2m7Y_9I/AAAAAAAAEKA/BMa9FSQS-GkGeR4p4avqK5uKZgfuvtDHACK8BGAs/s0/graviterras%2Blogo%2B2.png" height="130px" width="240px">
-        </a>
-    </p>
     <!-- <ul>
       <li><a class="active" href="file:///Users/LB/Sample/public/home.html">Home</a></li>
       <li><a href="file:///Users/LB/Sample/public/problem.html">Problems</a></li>
@@ -45,35 +132,70 @@
 
     </ul> -->
 
+<div class="parallax"></div>
+<div style="height:300px;background-color:white;font-size:36px">
+  <center class = "guac">MISSION STATEMENT:</center>
+  <center class = "wild">
+      Our mission is to educate people about the environment and promote them to take initiative in leading eco-friendly lives.
+      Our company’s name “Graviterras” is  derived from the latin words “Gravitas”, which means to gravitate towards,  and “Terras” which means Earth, hence our core principle is to gravitate towards Earth.
+            Our mission to protect the earth is essential for today and for the future.
+  </center>
+</div>
 
-<div class="slideshow-container">
+<div class = "cool">
+  <div class="dropdown">
+    <button class="dropbtn">
+      <div class="menu"></div>
+      <div class="menu"></div>
+      <div class="menu"></div>
+    </button>
 
-<center><br>
+    <div class="dropdown-content">
+
+      <a href="problem.html">Problems</a>
+      <a href="progress.html">Current Progress</a>
+      <a href="solve.html">Learn to Solve</a>
+    
+      <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
+
+    </div>
+  </div>
+  <p>
+      <a href="home.html">
+      <img class = "cool" border="0" alt="climate" src="image (1).png" height="120px" width="300px">
+
+      </a>
+  </p>
+<div class="center">GRAVITERRAS</div>
+<img class = "center2" src="logo-removebg-preview.png" alt ="Coral Reefs" width = "850" height = "500">
+
+
+
+
+<center class="slideshow-container">
 
 <div class="mySlides fade">
-   <img src="https://www.wallpaperflare.com/static/865/538/479/earth-sun-planet-surface-wallpaper.jpg" style="width:100%">
+   <img class = "border" src="https://s23527.pcdn.co/wp-content/uploads/2017/01/geos-16.jpg.optimal.jpg" style="width:100%;height:600px;">
 </div>
 
 <div class="mySlides fade">
-   <img src="https://cdn.naturettl.com/wp-content/uploads/2017/11/22010849/best-iceland-landscape-photography-locations-J%C3%B6kuls%C3%A1rl%C3%B3n-Glacier-Lagoon-900x600.jpg" style="width:100%">
+   <img class = "border" src="http://www.aljanh.net/data/archive/img/1084203126.jpeg" style = "width:100%;height:600px;">
 </div>
 
 <div class="mySlides fade">
-   <img src="http://2.bp.blogspot.com/-2wnNiZojZPI/VltWNNYUS0I/AAAAAAAApQY/XNqUGpZhLug/s640/Coral-Reef-Wallpapers-HD-desktop-WIde.jpeg" style="width:100%">
+   <img class = "border" src="https://fiveest.com/wp-content/uploads/2019/04/guinea-1.jpg" style = "width:100%;height:600px;">
 </div>
 
 <div class="mySlides fade">
-   <img src="https://rainforestbiomeassignment.weebly.com/uploads/4/9/0/9/49091547/2957188_orig.jpg" style="width:100%">
+   <img class = "border" src="https://www.wallmesh.com/wp-content/uploads/2018/10/Fall-Landscape-Scenery-Autumn-Mountain-HD-Wallpapers.jpg" style = "width:100%;height:600px;">
 </div>
 
 <div class="mySlides fade">
-   <img src="https://www.rainforest-rescue.org/photos/article/wide/xl/jungle-morning-fog.jpg" style="width:100%">
+   <img class = "border" src="http://allpicts.in/wp-content/uploads/2016/03/4K-Wallpapers-with-Jungle-and-River-Pictures-Free-to-Download-3840x2160.jpg" style = "width:100%;height:600px;">
 </div>
 
 
-</center></br>
-
-
+</center>
 
 
 
@@ -90,24 +212,27 @@
 </center>
 
 
-  <br><p><center id = "thicc">
-    Mission Statement:
-  </center></p></br>
-  <div id = "bean" ><center><br>
-    Our mission is to educate people about the environment and promote them to take initiative in leading eco-friendly lives.
-    Our company’s name “Graviterras” is  derived from the latin words “Gravitas”, which means to gravitate towards,  and “Terras” which means Earth, hence our core principle is to gravitate towards Earth.
-    Our mission to protect the earth is essential for today and for the future.
 
-</br></center></div>
 
-<br>
+<div class = "column right">
+
+</div>
+
+<div class="parallax2"></div>
+<div style="height:150px;background-color:white;font-size:36px">
+  <center class = "wild2">
+      To better understand how to protect the environment,
+      it is essential to debunk some common myths regarding a factor that proliferates ecosystem destruction - pollution.
+  </center>
+  </div>
+
 <div class = "row">
 <div class="container">
-  <center>Land Myth:</center>
-  <center>Eating local doesn’t reduce pollution</center>
+  <center class = "thicc">LAND MYTH:</center>
+  <center class = "bean">Eating local doesn’t reduce pollution</center>
   <img src="https://i.pinimg.com/originals/5b/13/50/5b1350e967ff190e156a70e87740b64a.jpg" alt="Avatar" class="image" width = "300" height = "500">
   <div class="middle">
-    <div class="text">Eating food grown locally or seasonally means that you are eating food that didn’t have to be transported over long distances.
+    <div class="text"><center><u>Myth Debunked: </u></center><br>Eating food grown locally or seasonally means that you are eating food that didn’t have to be transported over long distances.
       Food that is transported over long distances causes pollution due to the emissions of vehicles.
       In addition eating local can help support local farms.
       So you can kill two birds with one stone.
@@ -119,14 +244,14 @@
 
 
 <div class="container">
-  <center>Ocean Myth:</center>
-  <center>Plastic Breaks Down</center>
+  <center class = "thicc">OCEAN MYTH:</center>
+  <center class = "bean">Plastic Breaks Down</center>
   <img src="https://i.pinimg.com/originals/ce/28/b2/ce28b22e131339c77a65d4da3045d725.png" alt="fish" class="image" width = "300" height = "500">
   <div class="middle">
-    <div class="text">Plastic does not decompose by itself;
-      Instead, it tends to break apart into microplastics.
-      There are 5 trillion pieces of plastic in the ocean and 90% of it is from “microplastics";
-      This is detrimental to our ocean life because fish that consume the plastic have ingested harmful chemicals which, in turn, affects us.
+    <div class="text"><center><u>Myth Debunked: </u></center><br>Plastic does not decompose by itself;
+      instead, it tends to break apart into microplastics.
+      There are 5 trillion pieces of plastic in the ocean and 90% of it is from “microplastics".
+      This is detrimental to our ocean life because fish that consume the plastic ingest harmful chemicals from the plastics, chemicals that pass into humans that eat such fish.
 </div>
   </div>
 </div>
@@ -134,17 +259,58 @@
 
 
 <div class="container">
-  <center>Air Myth:</center>
-  <center>Air Pollution is only present if you can see it</center>
-  <img src="https://st2.depositphotos.com/1173469/9883/i/950/depositphotos_98830796-stock-photo-bird-in-flight-spring-concept.jpg" alt="swag" class="image" width = "300" height = "500">
+  <center class = "thicc" >AIR MYTH:</center>
+  <center class = "bean">Air pollution is only there if you can see it</center>
+  <img src ="https://i.pinimg.com/736x/15/eb/63/15eb63e4106b65973d82bd90b3bda435.jpg" alt="swag" class="image" width = "300" height = "500">
   <div class="middle">
-    <div class="text">While some pollutants can be visible most gaseous chemicals are invisible.
-      Pollutants that are invisible include formaldehyde, carbon dioxide and nitrogen dioxide.
+    <div class="text"><center><u>Myth Debunked: </u></center><br>While some pollutants can be visible, most gaseous chemicals are invisible.
+      Pollutants that are invisible include formaldehyde, carbon dioxide, and nitrogen dioxide.
        These are byproducts of industrial processes and impact the ozone layer as well as us.
 <center>
 </div>
 </div>
 
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container1">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
 
     <script src="home.js"></script>
   </body>
