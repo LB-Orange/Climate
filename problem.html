@@ -1,21 +1,129 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <!-- <ul>
-    <li><a href="file:///Users/hongwang/Documents/home.html">Home</a></li>
-    <li><a href="file:///Users/hongwang/Documents/problem.html">Problems</a></li>
-    <li><a href="file:///Users/hongwang/Documents/progress.html">Current Progress</a></li>
-    <li><a href="file:///Users/hongwang/Documents/solve.html">Learn to Solve</a></li>
-  </ul> -->
-
-
 
   <head>
     <meta charset="utf-8">
     <title>Problems Today</title>
     <link rel="stylesheet" href="climate.css">
+    <style>
+    body {font-family: Arial, Helvetica, sans-serif;}
+    * {box-sizing: border-box;}
+
+    /* Full-width input fields */
+    input[type=text], input[type=password] {
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      display: inline-block;
+      border: none;
+      background: #f1f1f1;
+    }
+
+    /* Add a background color when the inputs get focus */
+    input[type=text]:focus, input[type=password]:focus {
+      background-color: #ddd;
+      outline: none;
+    }
+
+    /* Set a style for all buttons */
+    .signUp {
+      background-color: #4CAF50;
+      color: white;
+      padding: 15px 59.25px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      opacity: 0.9;
+      font-size: 11px;
+    }
+
+    button:hover {
+      opacity:1;
+    }
+
+    /* Extra styles for the cancel button */
+    .cancelbtn {
+      padding: 14px 20px;
+      background-color: #f44336;
+    }
+
+    .signupbtn {
+      padding: 14px 20px;
+      background-color: #4CAF50;
+    }
+    /* Float cancel and signup buttons and add an equal width */
+    .cancelbtn, .signupbtn {
+      float: left;
+      width: 50%;
+    }
+
+    /* Add padding to container elements */
+    .container {
+      padding: 16px;
+    }
+
+    /* The Modal (background) */
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: #474e5d;
+      padding-top: 50px;
+    }
+
+    /* Modal Content/Box */
+    .modal-content {
+      background-color: #fefefe;
+      margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+      border: 1px solid #888;
+      width: 80%; /* Could be more or less, depending on screen size */
+    }
+
+    /* Style the horizontal ruler */
+    hr {
+      border: 1px solid #f1f1f1;
+      margin-bottom: 25px;
+    }
+
+    /* The Close Button (x) */
+    .close {
+      position: absolute;
+      right: 35px;
+      top: 15px;
+      font-size: 40px;
+      font-weight: bold;
+      color: #f1f1f1;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: #f44336;
+      cursor: pointer;
+    }
+
+    /* Clear floats */
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    /* Change styles for cancel button and signup button on extra small screens */
+    @media screen and (max-width: 300px) {
+      .cancelbtn, .signupbtn {
+         width: 100%;
+      }
+    }
+    </style>
   </head>
 
   <body>
+
     <div class="dropdown">
       <button class="dropbtn">
         <div class="menu"></div>
@@ -23,28 +131,17 @@
         <div class="menu"></div>
       </button>
       <div class="dropdown-content">
-
-        <a href="home.html">Home</a>
-
         <a href="problem.html">Problems</a>
         <a href="progress.html">Current Progress</a>
         <a href="solve.html">Learn to Solve</a>
+        <button class="signUp" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
       </div>
     </div>
 
-    <p>
-        <a href="home.html">
-        <img border="0" alt="climate" src="https://lh3.googleusercontent.com/-LU0Xpj6Cr-I/XUnJ2m7Y_9I/AAAAAAAAEKA/BMa9FSQS-GkGeR4p4avqK5uKZgfuvtDHACK8BGAs/s0/graviterras%2Blogo%2B2.png" height="130px" width="240px">
-        </a>
-    </p>
-    <h1>Problems Today</h1>
-    <div>
-      To think that we are responsible for over 90% of the carbon emissions placed in the Earth’s atmosphere. There are various factors to climate change and the effect that it has on the environment. Carbon Dioxide can be emitted through pollution that we cause, through vehicles that we use, and through factories that we work in. There is no way to stop the emissions of Carbon Dioxide, but there are ways to limit the amount that is being produced. We can do this through using more renewable energy so we aren’t overusing supplies that grow over millions of years. We can use more natural types of energy like biomass energy, tidal energy, solar energy, wind energy, etc. We can also limit the amount of deforestation by using other materials besides wood. There are plenty of alternatives to use. We can start going more green and stop driving cars and other vehicles to locations that aren’t far. Factories can even limit how much they produce in factories and food establishments. When factories produce certain items, it often requires killing animals, tearing down trees, using crops to get a specific color pigment. The after effects of factories are even worse as it leads to mass pollution. We can limit pollution by recycling but, did you know that only 1% of materials put to get recycled actually get recycled? Yes, only 1% of the billions of items are getting recycled. The other 99% get thrown into another countries land which just leads to more pollution and entropy which is the spreading of Carbon Dioxide. There are also natural factors of Carbon Dioxide emissions. Examples would be the Earth’s axis, the Earth’s tilt, and the Earth’s rotation around the sun. Radiation from the sun also enters the Earth’s atmosphere.
-    </div>
-=======
+
     <div>
           <a href="home.html">
-          <img border="0" alt="climate" src="https://lh3.googleusercontent.com/-LU0Xpj6Cr-I/XUnJ2m7Y_9I/AAAAAAAAEKA/BMa9FSQS-GkGeR4p4avqK5uKZgfuvtDHACK8BGAs/s0/graviterras%2Blogo%2B2.png" height="130px" width="240px">
+          <img border="0" alt="climate" src="image2.png" height="120px" width="300px">
           </a>
     </div>
     <br>
@@ -54,22 +151,28 @@
     <br>
     <br>
     <br>
-    <div>
-      <h1>Problems Today</h1>
+    <center>
+    <div class="header">PROBLEMS TODAY</div>
+  </center>
+    <div class="parallax"></div>
+    <div class=problems>
+      <center>
+    <p id="info">There is no evident way to eliminate climate change. However, the United States has made some plans targeting carbon dioxide emissions into the atmosphere and trying to reduce the amount of oil we use by 2035.</p>
+  </center>
     </div>
+    <div><img src="file:///Users/hongwang/Downloads/Horizontal-Line-PNG-Photos.png" width="1195px" height="100px"></div>
     <br>
+    <br>
+    <br>
+    <h2>Carbon Emission</h2>
     <div>
         <a href="http://scienceovereverything.com/wp-content/uploads/2018/11/xMadagascar_Deforestation-905x509.jpg.pagespeed.ic.2bhZZ1AMD3.jp">
         <img src="http://scienceovereverything.com/wp-content/uploads/2018/11/xMadagascar_Deforestation-905x509.jpg.pagespeed.ic.2bhZZ1AMD3.jp" height="400px" width="600px">
         </a>
-        <br>
-        <br>
-        <br>
-        <br>
       <p>
         To think that we are responsible for over 90% of the carbon emissions placed in the Earth’s atmosphere. There are various factors to climate change and the effect that it has on the environment. Carbon Dioxide can be emitted through pollution that we cause, through vehicles that we use, and<span id="dots">...</span><span id="more"> through factories that we work in. There is no way to stop the emissions of Carbon Dioxide, but there are ways to limit the amount that is being produced. We can do this through using more renewable energy so we aren’t overusing supplies that grow over millions of years. We can use more natural types of energy like biomass energy, tidal energy, solar energy, wind energy, etc. We can also limit the amount of deforestation by using other materials besides wood. There are plenty of alternatives to use. We can start going more green and stop driving cars and other vehicles to locations that aren’t far. Factories can even limit how much they produce in factories and food establishments. When factories produce certain items, it often requires killing animals, tearing down trees, using crops to get a specific color pigment. The after effects of factories are even worse as it leads to mass pollution. We can limit pollution by recycling but, did you know that only 1% of materials put to get recycled actually get recycled? Yes, only 1% of the billions of items are getting recycled. The other 99% get thrown into another countries land which just leads to more pollution and entropy which is the spreading of Carbon Dioxide. There are also natural factors of Carbon Dioxide emissions. Examples would be the Earth’s axis, the Earth’s tilt, and the Earth’s rotation around the sun. Radiation from the sun also enters the Earth’s atmosphere.</span>
       </p>
-      <button onclick="myFunction()" id="myBtn">Read more</button>
+      <button class="readMore"onclick="myFunction()" id="myBtn">Read more</button>
     </div>
     <br>
     <br>
@@ -84,19 +187,20 @@
     <br>
     <br>
     <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2>The Top 5 Most Polluted Countries</h2>
     <div>
         <a href="https://ourworldindata.org/exports/annual-share-of-co2-emissions_v7_850x600.svg">
         <img src="https://ourworldindata.org/exports/annual-share-of-co2-emissions_v7_850x600.svg" width="600px" height="400px">
         </a>
-        <br>
-        <br>
-        <br>
-        <br>
       <p>
         There are five countries that are responsible for 61% of the world’s pollution. The country that emits the most Carbon Dioxide is China. They release 30% of the world’s pollution. This is due to their enormous market and their industry that keeps growing which will continually just become more dangerous. China emits more Carbon Dioxide than any other country. It has contributed to 1.6 million deaths per year. The country that “won” second place is
         <span id="dots1">...</span><span id="more1"> the United States, causing 15% of the world’s pollution. The United States is the world’s biggest industrial and commercial power. Due to this, it led to the most important combats in climate change. In 2018, America produced about 261 million tons of solid waste according to its’ Environmental Protection Agency. A little over half of the waste, 133 million tons, was gathered in landfills, but only about 34% was actually recycled or composted. The country that holds third place is India. 14/15 of the world’s most contaminated cities derive from India. India emits so much Carbon Dioxide and pollution that they needed to create a law protecting air quality in 1981. India burns so many fossil fuels which is one of the leading factors to why it’s so polluted. India is one of the riskiest countries to breathe in. After India comes Russia, emitting 5% of the world’s pollution. Russia has a high dependence on products like oil, coal, gas and fossil fuels. Russia also has one of the highest levels of deforestation and animal hunting. Last but not least is Japan. They emit 4% of the world’s pollution. Japan is the biggest consumer of fossil fuels and has the fifth largest greenhouse gas emissions. This is due to high level of urban development and industry that has little to no care for nature. These are the top 5 countries out of the 195 countries that are responsible for over half of the pollution that the world causes.</span>
       </p>
-      <button onclick="myFunction1()" id="Btn">Read more</button>
+      <button class="readMore" onclick="myFunction1()" id="Btn">Read more</button>
     </div>
     <br>
     <br>
@@ -111,20 +215,63 @@
     <br>
     <br>
     <br>
+    <br>
+    <br>
+    <h2>Global Warming is Melting Russia</h2>
     <div>
         <a href="https://natimages-1tmxd3aba43noa.stackpathdns.com/data/images/full/44207/arctic.jpg">
         <img src="https://natimages-1tmxd3aba43noa.stackpathdns.com/data/images/full/44207/arctic.jpg" width="600px" height="400px">
         </a>
-        <br>
-        <br>
-        <br>
-        <br>
       <p>
         A severed wolf head had been preserved for 32,000 years in permafrost 65 feet underground in the Northeastern part of Serbia. Serbia warms up twice as fast as any other part of the world. The permafrost is thawing. It shouldn’t be slowly melting because it’s permanently frozen land. Global warming is
         <span id="dots2">...</span><span id="more2"> essentially warming up one of the coldest places on Earth. Since Russia is dependent on the cold, global warming starts to deform the land which destroys houses and barns. It causes severe flooding and threatens villages with permanent flooding, damaging dirt roads and the hunting patterns of hunters. This leaves for residents to feel “baffled, unsettled, helpless, depressed and irritated”. Global warming is mostly a myth and a thought but in Russia, global warming is clearly well known and made aware of as ⅔ of the country is covered in permafrost. Summer in Russia usually runs through June 1st - September 1st but now, they have an additional couple of weeks for summer. The average annual temperature has risen by 4.5 degrees. Winters have become warmer and summers have become longer, which leads to all top layers of ice to start melting. Now the ice melts down at least ten feet when the maximum use to be three feet. Hunters are running out of permafrost spaces to put their meat in so the meat rots way faster than it used to.  Farmers are also in trouble because they have to keep relocating their work area and move it further away from their home which is an inconvenience to them. So many houses were left abandoned and roads were washed off that it looks like a “war” happened there. Climate change and global warming is not something to take lightly. It might not be affecting us but, it has already taken a toll on people in Russia and their lifestyle.</span>
       </p>
-      <button onclick="myFunction2()" id="myBtn2">Read more</button>
+      <button class="readMore" onclick="myFunction2()" id="myBtn2">Read more</button>
     </div>
+
+
+    <div id="id01" class="modal">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <form class="modal-content" action="/action_page.php">
+        <div class="container">
+          <h1>Sign Up</h1>
+          <p>Please fill in this form to create an account.</p>
+          <hr>
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required>
+
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+
+          <label for="psw-repeat"><b>Repeat Password</b></label>
+          <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+          <label>
+            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+          </label>
+
+          <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+          <div class="clearfix">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <button type="submit" class="signupbtn">Sign Up</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
+
     <script src="problem.js"></script>
   </body>
 </html>
