@@ -1,0 +1,239 @@
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+#device{
+  background-color: black;
+}
+.menu {
+  width: 30px;
+  height: 4px;
+  background-color: black;
+  margin: 6px 0;
+}
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  float: right;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.parallax {
+  /* The image used */
+
+  min-height: 600px;
+  background-image: url("https://thenypost.files.wordpress.com/2019/08/amazon-africa-smoke-fires.jpg?quality=90&strip=all&w=1033");
+  /* Set a specific height */
+  height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+<!-- Container element -->
+<div class="parallax"></div>
+
+
+h1 {
+  text-align: center;
+}
+
+
+.container {
+  position: relative;
+  text-align: center;
+  float: left;
+  width: 60.00%;
+  padding: 5px;
+}
+#car{
+  height:400px;
+  width:600px;
+}
+/*.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.container {
+  position: relative;
+  float: left;
+  width: 50.00%;
+  padding: 5px;
+}
+
+}
+*/.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  right: 15%;
+  transform: translate(-20%, 20%);
+  -ms-transform: translate(-20%, 20%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color:;
+  color: black;
+  font-size: 16px;
+  /* padding: 16px 32px; */
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  align-items: center;
+}
+
+.center {
+  position: absolute;
+  top: 55%;
+  left: 33%;
+  transform: translate(-20%, -50%);
+  font-size: 85px;
+  font-family:fantasy;
+  color: white;
+  font-weight: bold;
+}
+
+
+.parallax2 {
+  /* The image used */
+  min-height: 600px;
+  background-image: url("https://assets.rebelmouse.io/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbWFnZSI6Imh0dHBzOi8vYXNzZXRzLnJibC5tcy82NDcxMjU4Lzk4MHguanBnIiwiZXhwaXJlc19hdCI6MTU2NTUwOTAzMX0.OdoPhu3h_dPcMOGUidsSj6sTh8MuXDUuTVon5o9NHgs/img.jpg");
+  /* Set a specific height */
+  height: 500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.parallax3 {
+  /* The image used */
+  min-height: 600px;
+  background-image: url("https://www.nyserda.ny.gov/-/media/Images/Programs/Drive-Clean-NY/many-shades-of-clean.png?la=en");
+  /* Set a specific height */
+  height: 500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax4 {
+  /* The image used */
+  min-height: 600px;
+  background-image: url("https://img.newatlas.com/carbon-dioxide-highest-1.jpg?auto=format%2Ccompress&ch=Width%2CDPR&fit=crop&h=347&q=60&rect=0%2C163%2C5760%2C3240&w=616&s=541fb7735eb332f0312f62f1a263b546");
+  /* Set a specific height */
+  height: 500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax5 {
+  /* The image used */
+  min-height: 600px;
+  background-image: url("https://geographical.co.uk/media/k2/items/cache/6503b8bba24ac83ccad201b1abf0e501_XL.jpg");
+  /* Set a specific height */
+  height: 500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax6 {
+  /* The image used */
+  min-height: 600px;
+  background-image: url("http://globe-net.com/wp-content/uploads/isk-clean-economy-diagram.jpg");
+  /* Set a specific height */
+  height: 500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.box{
+  color: black;
+  font-family: fantasy;
+  width:100%;
+  padding: 35px;
+  font-stretch: extra-expanded;
+  font-size: 25px;
+  font-style: italic;
+}
+
+.box2{
+  color: black;
+  font-family: fantasy;
+  width:100%;
+  padding-bottom: 10px;
+  font-stretch: extra-expanded;
+  font-size: 30px;
+  font-style: italic;
+}

@@ -1,32 +1,128 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<!-- <ul>
-  <li><a class="active" href="file:///Users/LB/Sample/public/home.html">Home</a></li>
-  <li><a href="file:///Users/LB/Sample/public/problem.html">Problems</a></li>
-  <li><a href="file:///Users/LB/Sample/public/progress.html">Current Progress</a></li>
-  <li><a href="">Learn To Solve</a></li>
-
-</ul> -->
-
-
-
   <head>
+    <title>Progresses</title>
     <meta charset="utf-8">
-    <title>Problems Today</title>
-    <link rel="stylesheet" href= "home.css">
+    <link rel="stylesheet" href="progress.css">
+    <style>
+    body {font-family: Arial, Helvetica, sans-serif;}
+    * {box-sizing: border-box;}
 
-    <link rel="stylesheet" href="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.3.0/css/ol.css" type="text/css">
-  <style>
-    .map {
-      height: 400px;
+    /* Full-width input fields */
+    input[type=text], input[type=password] {
       width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      display: inline-block;
+      border: none;
+      background: #f1f1f1;
     }
-  </style>
-  <script src="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.3.0/build/ol.js"></script>
+
+    /* Add a background color when the inputs get focus */
+    input[type=text]:focus, input[type=password]:focus {
+      background-color: #ddd;
+      outline: none;
+    }
+
+    /* Set a style for all buttons */
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 15px 59.25px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      opacity: 0.9;
+    }
+
+    button:hover {
+      opacity:1;
+    }
+
+    /* Extra styles for the cancel button */
+    .cancelbtn {
+      padding: 14px 20px;
+      background-color: #f44336;
+    }
+
+
+    .signupbtn {
+      padding: 14px 20px;
+      background-color: #4CAF50;
+    }
+    /* Float cancel and signup buttons and add an equal width */
+    .cancelbtn, .signupbtn {
+      float: left;
+      width: 50%;
+    }
+
+    /* Add padding to container elements */
+    .container1 {
+      padding: 16px;
+    }
+
+    /* The Modal (background) */
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: #474e5d;
+      padding-top: 50px;
+    }
+
+    /* Modal Content/Box */
+    .modal-content {
+      background-color: #fefefe;
+      margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+      border: 1px solid #888;
+      width: 80%; /* Could be more or less, depending on screen size */
+    }
+
+    /* Style the horizontal ruler */
+    hr {
+      border: 1px solid #f1f1f1;
+      margin-bottom: 25px;
+    }
+
+    /* The Close Button (x) */
+    .close {
+      position: absolute;
+      right: 35px;
+      top: 15px;
+      font-size: 40px;
+      font-weight: bold;
+      color: #f1f1f1;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: #f44336;
+      cursor: pointer;
+    }
+
+    /* Clear floats */
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    /* Change styles for cancel button and signup button on extra small screens */
+    @media screen and (max-width: 300px) {
+      .cancelbtn, .signupbtn {
+         width: 100%;
+      }
+    }
+    </style>
 
   </head>
+  <body id= "device">
 
-  <body>
     <div class="dropdown">
       <button class="dropbtn">
         <div class="menu"></div>
@@ -34,57 +130,152 @@
         <div class="menu"></div>
       </button>
       <div class="dropdown-content">
-        <a href="home.html">Home</a>
         <a href="problem.html">Problems</a>
         <a href="progress.html">Current Progress</a>
         <a href="solve.html">Learn to Solve</a>
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
       </div>
     </div>
     <p>
         <a href="home.html">
-        <img border="0" alt="climate" src="https://lh3.googleusercontent.com/-LU0Xpj6Cr-I/XUnJ2m7Y_9I/AAAAAAAAEKA/BMa9FSQS-GkGeR4p4avqK5uKZgfuvtDHACK8BGAs/s0/graviterras%2Blogo%2B2.png" height="130px" width="240px">
+        <img border="0" alt="climate" src="image1.png" height="130px" width="240px">
         </a>
+    </p>
+    <div class="parallax"></div>
+    <div class="caption">
+      <span class="border"></span>
+    </div>
+    <center><div class="center"><strong>CURRENT PROGRESS<strong></div></center>
+      <div style="color:#777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+  <center class = "box2">IMPROVEMENTS:</center>
+  <center class = "box">Though much needs to be done to help preserve our environment, some countries have already started to work on this problem. Below you can find articles on countries like Iceland and the United States who have made eco-friendly efforts.</center>
+</div>
 
 
-            <h4>Please fill out this form:</h4>
-            <form action="">
-
-              <div><br>
-              <label for = "first">First Name:  </label><input type="text" id = "first">
-              </div>
-
-              <div><br>
-              <label for = "last">Last Name:  </label><input type="text" id = "last">
-              </div>
-
-              <div><br>
-              <label for = "Add">Address:  </label><input type="text" id = "Add">
-              </div>
-
-              <div><br>
-              <label for = "Zip">Zipcode:  </label><input type="text" id = "Zip">
-              </div>
-
-              <br><p id = "output"></p>
+<div class="parallax2"></div>
+<div class="bgimg-2">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">  Iceland Making Strides</span>
+  </div>
+</div>
+  <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+<h3 style="text-align:center;"><strong>Expand the use of renewable energy & transform our energy system into one that is more clean and efficient by being less dependent on coal and other fossil fuels.</strong></h3>
+<p>Iceland is leading the way to using more renewable energy.
+      It receives their energy through geothermal and hydroelectric power.
+      Geothermal energy is thermal energy generated and stored in the Earth naturally.
+      Hydroelectric energy is electricity produced by hydropower (the force of the water being released from the reservoir through the dam spins the blades of a giant turbine making electricity).
+      <a href="https://www.ecowatch.com/iceland-worlds-largest-clean-energy-producer-per-capita-1882105880.html"> Read More </a></p>
+</div>
 
 
-              <div><br>
-              <label for = "city">City:  </label><input type="text" id = "city">
-              </div>
+<div class="parallax3"></div>
+<div class="bgimg-3">
+  <div class="caption">
+  <span class="border" style="background-color: transparent;font-size:25px;color: #f7f7f7;">  Fuel Efficiency</span>
+  </div>
+</div>
+  <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+<h3 style="text-align:center;"><strong>Increase vehicle fuel efficiency and support other solutions that are willing to reduce the amount of oil use.</strong></h3>
+<p>The United States is planning on doubling the fuel efficiency of new cars,trucks, and commercial vehicles by 2035.
+      This can lead to saving over 5 million barrels of oil a day.
+      <a href="https://www.ucsusa.org/clean-vehicles/fuel-efficiency"> Read More </a>
+      The United States made a plan to cut oil use which is called the Half The Oil plan.
+      They plan on doing this by using better biofuels and advanced electric cars
+      <a href="https://www.ucsusa.org/clean-vehicles"> Read More Here </a></p>
+</div>
 
-              <div><br>
-              <label for = "state">State:  </label><input type="text" id = "state">
-              </div>
+<div class="parallax4"></div>
+<div class="bgimg-4">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">  Curbing Carbon</span>
+  </div>
+</div>
+  <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+<h3 style="text-align:center;"><strong>We can place limits on the amount of carbon that polluters are allowed to emit into the atmosphere.</strong></h3>
+<p> Ways in which we can reduce the amount of carbon we are responsible for is through producing less meat,  unplug devices when you don’t need to have it plugged in, drive less, plant a garden, eat more local and organically grown foods, and line-dry your clothes.
+      The most that has been done so far is that the United States made The Clean Power Plan.
+      To find out more about The Clean Power Plan,
+      <a href="https://www.ucsusa.org/our-work/global-warming/reduce-emissions/what-is-the-clean-power-plan "> Read More </a></p>
+</div>
 
-              <br>
-               <input type="submit" value="Submit">
+
+<div class="parallax5"></div>
+<div class="bgimg-5">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">  Limit Deforestation</span>
+  </div>
+</div>
+  <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+<h3 style="text-align:center;"><strong>Reduce tropical deforestation and its emissions that are sociated with global warming.</strong></h3>
+<p>Tropical deforestation causes about 10% of the world’s heat trapping emissions.
+      By reducing tropical deforestation, we can limit global warming emissions and emissions created from fossil fuels.
+      There have been quite a few successes in which deforestation has been limited. Such as programs like REDD+ offering rewards to countries who limit tropical deforestation.
+      <a href="https://www.ucsusa.org/global-warming/solutions/stop-deforestation"> Read More </a></p>
+</div>
+
+<div class="parallax6"></div>
+<div class="bgimg-6">
+  <div class="caption">
+  <span class="border" style="background-color:black;font-size:25px;color: #f7f7f7;">  Clean Energy Economy</span>
+  </div>
+</div>
+  <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+<h3 style="text-align:center;"><strong>Build a clean energy economy by investing money in efficient energy technologies, industries, and approaches.</strong></h3>
+<p>In order to do this, we would need to reduce air pollution,
+      cut global warming emissions, create new jobs and industries,
+      diversify our power supply, decrease dependence on coal and other fossil fuels, m
+      ove America toward a cleaner, healthier energy future.
+      <a href="https://www.ucsusa.org/our-work/global-warming/reduce-emissions/what-is-the-clean-power-plan "> Read More </a>
+      and
+      <a href="https://www.ucsusa.org/clean-energy/increase-renewable-energy/momentum"> Read More Here </a></p>
+</div>
+<br>
+
+<!-- <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button> -->
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container1">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
 
 
+  </body>
 
-          </form>
-            <div id="map" class="map"></div>
-          </body>
-
-
-          <script src = "js/pollution.js"></script>
 </html>
