@@ -1,52 +1,9 @@
-.image {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
-}
 
-.middle2 {
-  opacity: 0;
-  /* position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%); */
-  text-align: center;
-}
-.middle2:hover{
-  opacity:1;
-}
-
-.container:hover .image {
-  opacity: 0.3;
-}
-
-.container:hover .middle {
-  opacity: 1;
-}
-
-.text1 {
-  background-color: #134200;
-  text-decoration-color: #108136;
-  color:  #fdfafa;
-  font-size: 16px;
-  width: 500px;
-  height: auto;
-  display: block;
-}
 .parallax {
-  /* The image used */
   background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/lyndon-4h-sunflowers-kansas-1531164994.jpg");
   opacity: 0.5;
-  filter: alpha(opacity=50); /* For IE8 and earlier */
-
-  /* Set a specific height */
+  filter: alpha(opacity=50);
   height: 500px;
-
-  /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -54,256 +11,170 @@
 }
 
 .parallax2 {
-  /* The image used */
   background-image: url("202798.jpg");
-
-  /* Set a specific height */
   height: 824px;
-
-  /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.parallax5 {
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-decoration: none;
-
-}
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: fantasy;
-  font-size:30px;
-
-
 }
 
 .centered2 {
   position: absolute;
-  top: 50%;
+  top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: fantasy;
-  font-size: 80px;
+  font-size: 100px;
   color: white;
 }
-.head1{
-  color: white;
-  size: 67px;
-  /* position: fixed;
-  bottom: 543px;
-  left: 416px; */
-}
 
-
-
-/* #org{
-  margin-left: 620px;
-  margin-bottom: -45px;
-} */
-
-
-.head2{
-  color: white;
-  size: 67px;
-  /* position: fixed;
-  bottom: 143px;
-  left: 176px; */
-}
-.head2:hover{
-  opacity: 0;
-}
-#surv{
-  background-color: #134200;
-  color:  #fdfafa;
-  font-size: 16px;
-  width: 100px;
-  height: auto;
-  display: block;
-  margin-left: 521px;
-  margin-top: -52px
-
-
-}
-
-.head3{
-  color: white;
-  size: 50px;
-  /* position: fixed; */
-  /* bottom: 342px;
-  left: 979px; */
-}
-div.container{
-  display: block;
-  width: 100%;
-  min-height:40%;
-  size: 67px;
-}
-
-#org_container{
-  position: relative;
-right: 10%;
-}
-
-#quiz_container{
-  position: relative;
-left: 30%;
-}
-
-#donate_container{
-  position: relative;
-right: 15%;
-}
-
-.middle {
-  transition: .5s ease;
-  opacity: 0;
-
-  text-align: center;
-}
-
-#don{
-  background-color: #BCB8B1;
-  text-decoration-color: #108136;
-  color:  #005A1E;
-  font-size: 16px;
-  width: 500px;
-  height: auto;
-  display: block;
-  margin-left: 521px;
-  margin-top: -52px
-
-
-}
 .line{
-  /* text-decoration: none; */
+  text-decoration-line: none;
+  text-decoration: none;
   color: #fdfafa;
-
 }
 a, u {
     text-decoration: none;
     color: white
 }
 
-.line2{
-  text-decoration-line: none;
-  text-decoration: none;
-  color: #fdfafa;
-
-}
 #computer{
   background-color: black;
 }
 
 .wild2{
-  padding-top: 35px;
+  padding-top: 72px;
 }
 
-
-.row5{
-  min-height: 80%;
-
-
-
+.poop {
+  position: absolute;
+  top: 160%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: fantasy;
+  font-size: 80px;
+  color: white;
 }
 
-.row5::after {
-  content: "";
-  clear: both;
-  display: table;
-
+.sexy2 {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 250%;
+  left: 50%;
+  transform: translate(-49%, -38%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: #134200;
+  text-decoration-color: #108136;
+  color:  #fdfafa;
+  font-size: 16px;
+  width: 500px;
+  height: auto;
+  display: block;
 }
 
-.container3 {
-  position: relative;
-  float: left;
-  width: 33.33%;
-  padding: 5px;
-text-decoration-line:none;
-}
-
-
-.thiccc{
+.thicccc{
   color: white;
   font-family: fantasy;
   position: absolute;
-  top: 40%;
+  top: 220%;
   left: 80%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 30px;
+  font-size: 70px;
+  font-weight: bold;
 }
 
+.poop:hover .thicccc{
+  opacity: 0;
+}
 
+.poop:hover .sexy2 {
+  opacity: 1;
+}
 
-.thiccc2{
+#cray{
   color: white;
   font-family: fantasy;
   position: absolute;
-  bottom: 10%;
-  left: 80%;
-  color: white;
-  font-size: 30px;
-
-}
-
-.beann{
-  color: white;
-  font-family: fantasy;
-  position: absolute;
-  top: 75%;
+  top: 70%;
   left: 80%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 40px;
-  font-family: fantasy;
-
+  font-size: 50px;
 }
 
+#ola{
+  color: white;
+  font-family: fantasy;
+  position: absolute;
+  top: 70%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 50px;
+}
 
 .sexy {
   transition: .5s ease;
   opacity: 0;
   position: absolute;
-  top: 50%;
+  top: 70%;
   left: 80%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
 
-
-.container3:hover .image {
-  opacity: 0.3;
-}
-
-.container3:hover .sexy {
+.column:hover .sexy {
   opacity: 1;
 }
 
-.container3:hover .thiccc{
+.column:hover #cray{
   opacity: 0;
 }
 
-.container3:hover .thiccc2{
+
+.column:hover #ola{
   opacity: 0;
 }
 
-.container3:hover .beann{
-  opacity: 0;
-}
 .fish {
   color: white;
   font-size: 24px;
   font-family: fantasy;
+}
 
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 80px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: -950px;
+  left: 274px;
+  font-size: 18px;
+}
+
+
+.bottomright {
+  position: absolute;
+  bottom: -950px;
+  right: 383px;
+  font-size: 18px;
 }
